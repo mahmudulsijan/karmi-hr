@@ -37,7 +37,7 @@
 1. github.com → **New repository** → নাম `karmi-hr` → **Public**।
 2. **uploading an existing file**-এ সব ফাইল (`index.html`, `backend.js`, `firebase-config.js`, `firestore.rules`, `.nojekyll`, `README.md`) ড্র্যাগ করে **Commit changes**।
 3. **Settings → Pages → Deploy from a branch → main → / (root) → Save**।
-4. ১-২ মিনিট পর: `https://yumoo7.github.io/karmi-hr/`
+4. ১-২ মিনিট পর: `https://mahmudulsijan.github.io/karmi-hr/`
 
 ---
 
