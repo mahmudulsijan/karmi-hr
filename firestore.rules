@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // শুধু নিচের ইমেইলগুলো ডেটা পড়তে/লিখতে পারবে। নিজের ইমেইল বসান।
+    function allowed() {
+      return request.auth != null
+        && request.auth.token.email in [
+          "you@example.com",
+          "partner@example.com"
+        ];
+    }
+    match /{document=**} {
+      allow read, write: if allowed();
+    }
+  }
+}
